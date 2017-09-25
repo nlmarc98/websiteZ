@@ -1,0 +1,63 @@
+<?php 
+$page = 'Home';
+$SiteDescription = "Nijmeegse Studenten Sport Vereniging Zanshin in Nijmegen. JiuJitsu voor studenten.";
+$SiteKeywords = "JiuJitsu, Zanshin, Jiu-Jitsu, Nijmegen, martial-arts, judo, vechten";
+require_once('includes/header.php');
+?>
+        <div class="leftRow">
+					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+    						<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    						<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+   							<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+   							<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+  						</ol>
+  						<div class="carousel-inner">
+  							<div class="item active">
+  								<img src="assets/images/fotos/SliderImage-1.jpg" />
+  							</div>
+  							<div class="item">
+  								<img src="assets/images/fotos/SliderImage-2.jpg" />
+  							</div>
+                <div class="item">
+                  <img src="assets/images/fotos/SliderImage-3.jpg" />
+                </div>
+  							<div class="item">
+                  <img src="assets/images/fotos/SliderImage-4.jpg" />
+                </div>
+				<div class="item">
+                  <img src="assets/images/fotos/SliderImage-5.jpg" />
+                </div>
+  						</div>
+  						<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+  							<span class="glyphicon glyphicon-chevron-left"></span>
+  						</a>
+  						<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+    						<span class="glyphicon glyphicon-chevron-right"></span>
+  						</a>
+					</div>
+					
+          <div class="spacer">
+            <div class="dinges"></div>
+          </div>
+					<h1>NSJV Zanshin, JiuJitsu Nijmegen</h1>
+					<p>Welkom op de website van Nijmeegse Studenten Jiu-jitsu Vereniging Zanshin.</p>
+					<p>Op deze site vind je allerlei informatie over de vereniging zoals trainingstijden en activiteiten.					
+					Daarnaast vind je ook informatie over jiu-jitsu zelf, bijvoorbeeld de oorsprong van jiu-jitsu, en uitleg over de etiquette tijdens de training.</p>
+					<p>Zanshin is een jonge vereniging met ongeveer 30 leden. Naast de wekelijkse training en andere jiu-jitsu gerelateerde activiteiten organiseert Zanshin ook sociale activiteiten zoals spelletjesavonden, uitjes en een jaarlijks kerstdiner.
+					Heb je zin om een keer mee te trainen neem dan gerust <a href="contact.php" class="intext">contact</a> met ons op, of kom een keer langs op een van onze trainingen op donderdagavond om 19.30 in de dojo van het universitair sportcentrum.</p>
+				</div>
+
+				<?php require_once('includes/rightrow.php');?>
+			</div>
+
+		</div>
+		<?php
+      require_once('includes/footer.php');
+    ?>
+	</div>
+
+</body>
+
+</html>
