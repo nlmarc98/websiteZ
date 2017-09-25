@@ -1,0 +1,33 @@
+<?php 
+$page = 'Etiquette';
+$SiteDescription = 'Etiquette van de Nijmeegse Studenten Sport Vereniging Zanshin in Nijmegen. JiuJitsu voor studenten.';
+$SiteKeywords = 'JiuJitsu, Zanshin, Jiu-Jitsu, Nijmegen, martial-arts, judo, vechten, etiquette';
+require_once('includes/header.php');
+?>
+
+<div class="leftRow">
+	<h1>Etiquette</h1>
+	<h2>Afspraken gebruik Dojo</h2>
+	<ul class="normal">
+		<li>Vóór het betreden van de dojo-ruimte gelieve slippers te dragen. Tussen de lessen door bij gebruik toilet/kleedkamer ook hier slippers aan. Dit ivm hygiëne!!</li>
+		<li>Omkleden in de desbetreffende kleedkamers of toiletruimte.</li>
+		<li>Sieraden/piercings etc. uit of afplakken om blessures te voorkomen.</li>
+		<li>Lange haren in staart of vlecht. </li>
+		<li>Bloedsporen op de mat zelf schoonmaken.</li>
+		<li>Bij gebruik van EHBO-koffer of sportattributen deze weer op de plaats retour. </li>
+	</ul>
+</div>
+
+<?php require_once('includes/rightrow.php');?>
+
+</div>
+
+		</div>
+		<?php
+      require_once('includes/footer.php');
+    ?>
+	</div>
+
+</body>
+
+</html>
