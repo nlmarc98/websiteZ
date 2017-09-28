@@ -1,0 +1,55 @@
+<?php 
+$page = 'Nieuws';
+require_once('includes/header.php');
+
+$titel = $database->real_escape_string($_POST['makenews_title']);
+$kortnieuws = $database->real_escape_string($_POST['makenews_kortnieuws']);
+$nieuws = $database->real_escape_string($_POST['makenews_nieuws']);
+$datum = $database->real_escape_string($_POST['makenews_datum']);
+
+if(isset($_POST['makenews_submit'])) {
+	if(empty($titel) || empty($kortnieuws) || empty($datum)) {
+	echo 'Vul alstublieft alle benodigde velden in!';
+	} else {
+		$query = $database->query('INSERT INTO `news` (`titel`, `kortnieuws`, `nieuws`, `datum`) VALUES ("'. $titel .'", "'. $kortnieuws .'", "'. $nieuws .'", "'.$datum.'")');
+		if($query) {
+			echo 'Nieuws aangemaakt';
+		}
+		
+	}
+}
+
+
+
+$datumsomething = new DateTime();
+	$date = $datumsomething->format('d-m-Y');
+?>
+
+<form method="post" action="">
+	<table>
+					<tbody >
+						<tr>
+							<td width="13%"><label for="makenews_title">Titel*:</label></td><td class="second"><input type="text" class="textInput" id="makenews_title" name="makenews_title"  /></td>
+						</tr>
+						<tr>
+					
+
+
+
+		<td width="13%"><label for="makenews_kortnieuws">Kort bericht*:</label></td><td class="second"><input type="text" class="textInput" id="makenews_kortnieuws" name="makenews_kortnieuws" " /></td>
+						</tr>
+						<tr>
+							<td width="13%"><label for="makenews_nieuws">Nieuwsbericht*:</label></td><td class="second"><textarea name="makenews_nieuws" id="makenews_nieuws"></textarea></td>
+						</tr>
+						<tr>
+							<td width="13%"><label for="makenews_datum">Datum*:</label></td><td class="second"><input type="text" class="textInput" id="makenews_datum" name="makenews_datum" value="<?php echo $date; ?>" /></td>
+						</tr>
+				
+					</tbody>
+				</table>
+				<div class="spacer">
+           			<div class="dinges"></div>
+          		</div>
+          		<input type="submit" name="makenews_submit" id="makenews_submit" class="button right" value="Opslaan" />
+          		</form>
+</div>
